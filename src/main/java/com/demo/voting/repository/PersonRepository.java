@@ -1,4 +1,10 @@
 package com.demo.voting.repository;
 
-public interface PersonRepository {
+import com.demo.voting.model.Person;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PersonRepository extends JpaRepository<Person, Integer> {
+
 }
